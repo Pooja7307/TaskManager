@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        Task Manager
+        <button id="dark-mode-toggle">Dark Mode</button>
+    </header>
+    <div class="container">
+        <div class="task-input-container">
+            <input type="text" id="task-title" placeholder="Task title...">
+            <input type="text" id="task-summary" placeholder="Task summary...">
+            <select id="task-category">
+                <option value="Work">Work</option>
+                <option value="Personal">Personal</option>
+                <option value="Other">Other</option>
+            </select>
+            <button onclick="addTask()">Add</button>
+        </div>
+        <div id="task-list" class="task-list"></div>
+    </div>
+
+<script src="index.js"></script>
+</html>
